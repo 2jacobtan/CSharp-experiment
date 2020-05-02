@@ -1,0 +1,12 @@
+
+.fake
+.ionide
+
+.vscode/
+Test project/.vscode/
+Test project/bin/
+Test project/obj/
+
+Function chaining/.vscode/
+Function chaining/bin/
+Function chaining/obj/
