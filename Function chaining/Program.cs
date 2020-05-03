@@ -1,4 +1,6 @@
-﻿#nullable enable
+﻿//try at https://dotnetfiddle.net/KvNhXi
+
+#nullable enable
 
 using System;
 using System.Linq;
