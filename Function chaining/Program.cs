@@ -100,6 +100,12 @@ namespace MyNamespace
                 .ToByteArray(isBigEndian:true) //isBigEndian:True is needed
                 .Select(b=>b.ToString("x2"))._(string.Concat)
             );
+            print(BigInteger
+                .Parse("04576848aac8c2c42962afdf3aa220065",NumberStyles.HexNumber)
+                .ToByteArray() //isBigEndian:True is needed
+                .Reverse() //otherwise use Array.Reverse()
+                .Select(b=>b.ToString("x2"))._(string.Concat)
+            );
         #endregion
 
         }
@@ -125,5 +131,6 @@ Guid   8a847645-8cac-422c-962a-fdf3aa220065
 Guid2  8a847645-8cac-422c-962a-fdf3aa220065
 
 4576848AAC8C2C42962AFDF3AA220065
+4576848aac8c2c42962afdf3aa220065
 4576848aac8c2c42962afdf3aa220065
  */
