@@ -15,10 +15,17 @@ namespace MyNamespace
     }
     static class ConsoleOutputHelpers
     {
-        static internal void print0(params Object[] args) => args.Select(x=>x?.ToString())._(_=>string.Join(' ',_))._(Console.WriteLine);
+        static internal void print0(params Object[] args) =>
+            args
+            .Select(x=>x?.ToString()) //unnecessary
+            ._(_=>string.Join(' ',_))
+            ._(Console.WriteLine);
         
         //no need to use ToString() before string.Join()
-        static internal void print(params Object[] args) => args._(_=>string.Join(' ',_))._(Console.WriteLine);
+        static internal void print(params Object[] args) =>
+            args
+            ._(_=>string.Join(' ',_))
+            ._(Console.WriteLine);
     }
     class Program
     {
