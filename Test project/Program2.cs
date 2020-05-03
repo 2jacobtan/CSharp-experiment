@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Numerics; //BigInt
 using System.Linq;
 
-namespace myNamespace1
+namespace MyNamespace1
 {
   public static class FunctionChaining
     {

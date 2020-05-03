@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Numerics; //BigInt
 using System.Linq;
 
-namespace myNamespace
+namespace MyNamespace
 {
     static class FunctionChaining
     {
