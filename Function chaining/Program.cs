@@ -10,6 +10,7 @@ namespace MyNamespace
 {
     static class FunctionChaining
     {
+        //pipe-forward extension methods
         internal static U _<T,U>(this T input, Func<T,U> fun) => fun(input);
         internal static void _<T>(this T input, Action<T> fun) => fun(input);
     }
