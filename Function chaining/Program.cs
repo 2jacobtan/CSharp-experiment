@@ -32,7 +32,7 @@ namespace MyNamespace
     }
     class Program
     {
-        static int product(int a, int b) => a + b;
+        static int product(int a, int b) => a * b;
 
         static void Main(string[] args)
         {
@@ -119,7 +119,7 @@ namespace MyNamespace
 /* 
 Hello World!
 
-Product = 5
+Product = 6
 
 --------
 
